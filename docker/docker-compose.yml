@@ -21,5 +21,6 @@ services:
       - 7070:7070
       - 8000:8000
     volumes:
+      - ./sbt-launch.jar:/root/.sbt/launchers/0.13.13/sbt-launch.jar
       - ./templates:/templates
     dns: 8.8.8.8
