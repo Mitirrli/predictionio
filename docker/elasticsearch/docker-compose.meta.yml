@@ -19,4 +19,5 @@ services:
     environment:
       PIO_STORAGE_REPOSITORIES_METADATA_NAME: pio_meta
       PIO_STORAGE_REPOSITORIES_METADATA_SOURCE: ELASTICSEARCH
+    restart: always
 

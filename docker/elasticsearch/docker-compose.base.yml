@@ -30,6 +30,7 @@ services:
       memlock:
         soft: -1
         hard: -1
+    restart: always
   pio:
     depends_on:
       - elasticsearch
@@ -38,4 +39,5 @@ services:
       PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS: elasticsearch
       PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS: 9200
       PIO_STORAGE_SOURCES_ELASTICSEARCH_SCHEMES: http
+    restart: always
 

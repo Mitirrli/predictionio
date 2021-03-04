@@ -21,6 +21,7 @@ services:
       POSTGRES_USER: pio
       POSTGRES_PASSWORD: pio
       POSTGRES_INITDB_ARGS: --encoding=UTF8
+    restart: always
   pio:
     depends_on:
       - postgres
@@ -29,4 +30,5 @@ services:
       PIO_STORAGE_SOURCES_PGSQL_URL: "jdbc:postgresql://postgres/pio"
       PIO_STORAGE_SOURCES_PGSQL_USERNAME: pio
       PIO_STORAGE_SOURCES_PGSQL_PASSWORD: pio
+    restart: always
 

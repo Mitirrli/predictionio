@@ -19,4 +19,5 @@ services:
     environment:
       PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME: pio_event
       PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE: PGSQL
+    restart: always
 
